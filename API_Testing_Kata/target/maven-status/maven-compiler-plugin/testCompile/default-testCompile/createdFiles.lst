@@ -1,0 +1,8 @@
+com\booking\stepdefinitions\Bookingsteps.class
+com\booking\stepdefinitions\hooks.class
+base\bookingRequestFields$BookingDates.class
+com\booking\TestRunner.class
+base\Utils.class
+base\bookingRequestFields.class
+base\ConfigReader.class
+base\declareendpoint.class
