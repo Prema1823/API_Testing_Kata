@@ -91,4 +91,14 @@ public class Bookingsteps extends Utils {
         public void verify_response_code ( int expectedStatusCode){
             assertEquals(expectedStatusCode, response.getStatusCode());
         }
+        
+ @Then("Verify the response status code as {int} and error message {string}")
+    public void verify_response_code_errorMessage(int expectedStatusCode,String errormessage){
+        assertEquals(expectedStatusCode, response.getStatusCode());
+        List<String> actualErrors = response.jsonPath().getList("errors");
+        String actualMessage=actualErrors.get(0);
+        System.out.println("Actual Message"  +actualMessage);
+        assertEquals(errormessage,actualMessage);
     }
+    }
+
