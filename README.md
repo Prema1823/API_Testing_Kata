@@ -7,21 +7,17 @@ Key Features
 
 ✅ API Test Automation using Rest-Assured
 
-✅ Cucumber BDD for writing human-readable feature files
+✅ Cucumber BDD framework -Gherkin language
 
 ✅ Data-driven testing: Examples in .feature files feed into POJO classes dynamically
 
 ✅ Jackson Library: Converts Java objects (POJOs) into JSON request payloads
 
-✅ Utilities layer: Common reusable methods (request setup, config reader, etc.)
-
 ✅ JSON Schema Validation using JsonSchemaValidator
-
-✅ Example: GET booking details response validated against getbookingresponseschema.json
+    Example: GET room availability details response validated against getroomavailability.json
 
 ✅ TestNG for test execution
-
-✅ Run tests with Cucumber Tags at feature/scenario level (@CreateroomBookinghappyflow,@Roombookingerrorflow)
+     Run tests with Cucumber Tags at feature/scenario level (@CreateroomBookinghappyflow,@Missingmandatoryfields)
 
 ⚙️ Prerequisites
 
@@ -29,28 +25,27 @@ Java: 8 or higher
 
 Maven: To manage project dependencies
 
-IDE: IntelliJ IDEA / Eclipse (recommended: IntelliJ for BDD plugins)
+IDE: IntelliJ IDEA 
 
 📦 Libraries and Tools Used
 
 Rest-Assured – For API Testing
-
 Cucumber – For BDD (Behavior-Driven Development)
-
 TestNG – Test execution framework
-
 Jackson Databind – For JSON (serialization & deserialization)
-
 JsonSchemaValidator – For response schema validation
 
 🚀 Installation
 
 Clone the repository:
-
-git clone 
-
+git clone https://github.com/Prema1823/API_Testing_Kata.git
 
 Install dependencies:
-
 mvn clean install
+
+Executing the test scripts:
 mvn clean test
+
+Note: 
+
+Provided swagger URL is not working, so I have used the given URL--> console values and hit postman for verifying request and response

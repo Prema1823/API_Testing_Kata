@@ -13,6 +13,7 @@ public class bookingRequestFields {
     private BookingDates bookingDates;
     private String email;
     private String phone;
+    private int bookingid;
 
 
 
@@ -59,7 +60,11 @@ public class bookingRequestFields {
     }
 
 
-
+    public int getbookingid(){
+        return bookingid;
+    }
+    public void setbookingid(int bookingId){
+        this.bookingid= bookingid;}
 
     public BookingDates getBookingdates() {
         return bookingDates;
@@ -88,6 +93,7 @@ public class bookingRequestFields {
             public void setCheckout(String checkout){
                 this.checkout = checkout;
             }
+
 
     }
 }

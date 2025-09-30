@@ -2,7 +2,7 @@
   "rooms": [
     {
       "roomid": 1,
-
+      "roomName": "101",
       "type": "Single",
       "accessible": true,
       "image": "/images/room1.jpg",

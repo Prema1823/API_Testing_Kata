@@ -4,6 +4,7 @@ public class declareendpoint {
 
     private String endPoint;
     private String token;
+
     public void setEndpoint(String endpoint){
         endPoint = endpoint;
     }
@@ -17,5 +18,6 @@ public class declareendpoint {
     public void setToken(String valueoftoken){
         token = valueoftoken;
     }
+
 }
 
