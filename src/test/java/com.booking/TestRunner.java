@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:target/cucumber-report.json"
         },
         monochrome = true,
-        tags="@endtoendflowhotelbooking"
+        tags="@Deletebookinghappyflow"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 }

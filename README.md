@@ -21,7 +21,7 @@ Key Features
 
 ⚙️ Prerequisites
 
-Java: 8 or higher
+Java: 24
 
 Maven: To manage project dependencies
 
@@ -44,7 +44,12 @@ Install dependencies:
 mvn clean install
 
 Executing the test scripts:
-mvn clean test
+1. Update the appropriate tags in TestRunner file. 
+    Eg. For Executing E2EAdmin.feature, pass @endtoendflowhotelbooking in TestRunner file under tags section
+2. mvn clean test
+
+Reports:
+
 
 Note: 
 

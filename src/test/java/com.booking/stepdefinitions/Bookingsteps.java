@@ -36,7 +36,7 @@ public class Bookingsteps extends Utils {
     protected declareendpoint declareendpoint= new declareendpoint();
     protected Response response;
     ObjectMapper mapper;
-
+    int bookingid;
 
     @Given("the user hits the endpoint {string}")
     public void user_hits_the_endpoint (String endpoint){
@@ -84,7 +84,8 @@ public class Bookingsteps extends Utils {
 
     @And("the response should match the JSON schema {string}")
     public void response_matches_jsonschema ( String schemapath){
-        response.then().body(matchesJsonSchemaInClasspath(schemapath));
+        response.then().assertThat()
+        .body(matchesJsonSchemaInClasspath(schemapath));
     }
 
 
@@ -118,7 +119,7 @@ public class Bookingsteps extends Utils {
         declareendpoint.setToken(token);
     }
 
-    int bookingid;
+
     @When("user logs in as admin and request details by roomid")
     public void user_logsasadmin_requestby_roomid(){
         response = requestSetup()
@@ -145,13 +146,14 @@ public class Bookingsteps extends Utils {
             setdates.setCheckout(editdata.get("checkout"));
             bookingRequestFields.setRoomid(Integer.parseInt(generateRandomRoomId()));
             bookingRequestFields.setdepositpaid(false);
+            bookingRequestFields.setbookingid(bookingid);
             // Serialize this object
             ObjectMapper mapper = new ObjectMapper();
             String requestBody = mapper.writerWithDefaultPrettyPrinter()
                     .writeValueAsString(bookingRequestFields);
 
             System.out.println("Request Body:\n" + requestBody);
-            bookingRequestFields.setbookingid(bookingid);
+            System.out.println( declareendpoint.getEndpoint() +bookingid);
             response = requestSetup()
                     .cookie("token", declareendpoint.getToken())
                     .body(requestBody)
@@ -180,9 +182,9 @@ public class Bookingsteps extends Utils {
 
     @When("admin deletes the booking using booking id")
     public void admin_deletes_booking_using_bookingid(){
+        System.out.println(declareendpoint.getEndpoint() +bookingid);
         response = requestSetup()
                 .cookie("token",declareendpoint.getToken())
-                .queryParam("roomid",bookingRequestFields.getRoomid())
                 .when()
                 .delete(declareendpoint.getEndpoint() +bookingid);
     }

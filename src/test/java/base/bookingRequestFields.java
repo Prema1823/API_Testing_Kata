@@ -59,12 +59,12 @@ public class bookingRequestFields {
         this.phone= phone;
     }
 
-
+    public void setbookingid(int bookingid){
+        this.bookingid= bookingid;}
     public int getbookingid(){
         return bookingid;
     }
-    public void setbookingid(int bookingId){
-        this.bookingid= bookingid;}
+
 
     public BookingDates getBookingdates() {
         return bookingDates;

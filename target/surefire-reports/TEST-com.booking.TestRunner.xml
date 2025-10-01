@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.booking.TestRunner" time="26.617" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.booking.TestRunner" time="19.919" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Program Files\KMSpico\temp\surefire11174697760643324124\surefirebooter-20250930230901919_3.jar C:\Program Files\KMSpico\temp\surefire11174697760643324124 2025-09-30T23-09-01_550-jvmRun1 surefire-20250930230901919_1tmp surefire_0-20250930230901919_2tmp"/>
+    <property name="sun.java.command" value="C:\Program Files\KMSpico\temp\surefire1398003689270034395\surefirebooter-20251001114507810_3.jar C:\Program Files\KMSpico\temp\surefire1398003689270034395 2025-10-01T11-45-07_209-jvmRun1 surefire-20251001114507810_1tmp surefire_0-20251001114507810_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\HP\IdeaProjects\API_Testing_Kata\target\test-classes;C:\Users\HP\IdeaProjects\API_Testing_Kata\target\classes;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured\5.5.5\rest-assured-5.5.5.jar;C:\Users\HP\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\HP\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HP\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\HP\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\HP\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\HP\.m2\repository\io\rest-assured\json-path\5.5.5\json-path-5.5.5.jar;C:\Users\HP\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured-common\5.5.5\rest-assured-common-5.5.5.jar;C:\Users\HP\.m2\repository\io\rest-assured\xml-path\5.5.5\xml-path-5.5.5.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\HP\.m2\repository\io\rest-assured\json-schema-validator\5.5.5\json-schema-validator-5.5.5.jar;C:\Users\HP\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\HP\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\HP\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\HP\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\HP\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\HP\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\HP\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\HP\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\HP\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\HP\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\HP\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\HP\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\HP\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\HP\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\HP\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\HP\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\HP\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\HP\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\HP\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\HP\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\HP\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\HP\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\HP\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\HP\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\HP\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\HP\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\HP\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\HP\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\HP\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HP\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\HP\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\HP\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\HP\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.24.1\log4j-slf4j2-impl-2.24.1.jar;C:\Users\HP\.m2\repository\org\json\json\20250107\json-20250107.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Program Files\KMSpico\temp\surefire11174697760643324124\surefirebooter-20250930230901919_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Program Files\KMSpico\temp\surefire1398003689270034395\surefirebooter-20251001114507810_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -58,20 +58,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Testing end to end flow as a admin&quot;, &quot;Testing end to end flow as admin&quot;](1)" classname="com.booking.TestRunner" time="20.858">
-    <failure message="Response Code mistmatches! expected [404] but found [200]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response Code mistmatches! expected [404] but found [200]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at com.booking.stepdefinitions.Bookingsteps.verify_response_code(Bookingsteps.java:94)
-	at ✽.Verify the response status code as 200(file:///C:/Users/HP/IdeaProjects/API_Testing_Kata/src/test/resources/features/E2EAdmin.feature:23)
-]]></failure>
+  <testcase name="runScenario[&quot;Testing end to end flow as a admin&quot;, &quot;Testing end to end flow as admin&quot;](1)" classname="com.booking.TestRunner" time="13.587">
     <system-out><![CDATA[
-@endtoendflowhotelbooking
-Scenario Outline: Testing end to end flow as a admin                                       # src/test/resources/features/E2EAdmin.feature:30
+@Deletebookinghappyflow
+Scenario Outline: Testing end to end flow as a admin                                       # src/test/resources/features/DeleteBooking.feature:25
   Given the user hits the endpoint "api/auth/login"                                        # com.booking.stepdefinitions.Bookingsteps.user_hits_the_endpoint(java.lang.String)
   When user logs in as admin generates token and authenticate using "admin" and "password" # com.booking.stepdefinitions.Bookingsteps.user_logs_asadmin_generates_token(java.lang.String,java.lang.String)
 Response status code200
@@ -81,19 +71,19 @@ Request Body:
 {
   "roomid" : 3,
   "depositpaid" : false,
-  "email" : "user5@tcs.com",
-  "phone" : "07907945852",
+  "email" : "rathcathr@tcs.com",
+  "phone" : "07907945853",
   "bookingid" : 0,
+  "firstname" : "Rath",
   "bookingdates" : {
-    "checkin" : "2025-10-02",
-    "checkout" : "2025-10-03"
+    "checkin" : "2025-11-06",
+    "checkout" : "2025-11-07"
   },
-  "firstname" : "userfirstname1",
-  "lastname" : "userlastname1"
+  "lastname" : "Cath"
 }
   When user provides the details and books the room with                                   # com.booking.stepdefinitions.Bookingsteps.user_provide_details_bookstheroom(io.cucumber.datatable.DataTable)
-    | fname          | lname         | email         | phone       | checkin    | checkout   |
-    | userfirstname1 | userlastname1 | user5@tcs.com | 07907945852 | 2025-10-02 | 2025-10-03 |
+    | fname | lname | email             | phone       | checkin    | checkout   |
+    | Rath  | Cath  | rathcathr@tcs.com | 07907945853 | 2025-11-06 | 2025-11-07 |
 Response status code201
   Then Verify the response status code as 201                                              # com.booking.stepdefinitions.Bookingsteps.verify_response_code(int)
   Given the user hits the endpoint "api/booking"                                           # com.booking.stepdefinitions.Bookingsteps.user_hits_the_endpoint(java.lang.String)
@@ -101,38 +91,10 @@ Booking ID of the booked room = 3
   When user logs in as admin and request details by roomid                                 # com.booking.stepdefinitions.Bookingsteps.user_logsasadmin_requestby_roomid()
 Response status code200
   Then Verify the response status code as 200                                              # com.booking.stepdefinitions.Bookingsteps.verify_response_code(int)
-  Given the user hits the endpoint "api/booking"                                           # com.booking.stepdefinitions.Bookingsteps.user_hits_the_endpoint(java.lang.String)
-Request Body:
-{
-  "roomid" : 1,
-  "depositpaid" : false,
-  "email" : "user1@gmail.com",
-  "phone" : "09876543211",
-  "bookingid" : 0,
-  "bookingdates" : {
-    "checkin" : "2025-10-18",
-    "checkout" : "2025-10-19"
-  },
-  "firstname" : "Userfname1",
-  "lastname" : "userlname1"
-}
-  When admin edits the room details                                                        # com.booking.stepdefinitions.Bookingsteps.admin_edits_room_details(io.cucumber.datatable.DataTable)
-    | fname      | lname      | email           | phone       | checkin    | checkout   |
-    | Userfname1 | userlname1 | user1@gmail.com | 09876543211 | 2025-10-18 | 2025-10-19 |
-Response status code404
-  Then Verify the response status code as 200                                              # com.booking.stepdefinitions.Bookingsteps.verify_response_code(int)
-      java.lang.AssertionError: Response Code mistmatches! expected [404] but found [200]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at com.booking.stepdefinitions.Bookingsteps.verify_response_code(Bookingsteps.java:94)
-	at ✽.Verify the response status code as 200(file:///C:/Users/HP/IdeaProjects/API_Testing_Kata/src/test/resources/features/E2EAdmin.feature:23)
-
-  And verify the updated fields in the response body                                       # com.booking.stepdefinitions.Bookingsteps.verify_updatedfields_response_body()
+  Given the user hits the endpoint "api/booking/"                                          # com.booking.stepdefinitions.Bookingsteps.user_hits_the_endpoint(java.lang.String)
+api/booking/3
   When admin deletes the booking using booking id                                          # com.booking.stepdefinitions.Bookingsteps.admin_deletes_booking_using_bookingid()
+Response status code200
   Then Verify the response status code as 200                                              # com.booking.stepdefinitions.Bookingsteps.verify_response_code(int)
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
