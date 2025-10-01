@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 01 11:45:10 IST 2025</td>
+<td>Started on:</td><td>Wed Oct 01 14:25:11 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18354 ms)</td>
+<tr><td>Total time:</td><td>80 seconds (80645 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,33 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error validation while booking the room", "Create Room Booking for the particular dates"</td>
+<td><div><pre>java.lang.AssertionError: expected [must be a well-formed email address] but found [size must be between 11 and 21]
+	at com.booking.stepdefinitions.Bookingsteps.verify_response_code_errorMessage(Bookingsteps.java:119)
+	at ✽.Verify the response status code as 400 and error message &quot;size must be between 11 and 21&quot;(file:///C:/Users/HP/IdeaProjects/API_Testing_Kata/src/test/resources/features/createBooking.feature:49)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1622464820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1622464820'><pre>java.lang.AssertionError: expected [must be a well-formed email address] but found [size must be between 11 and 21]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.booking.stepdefinitions.Bookingsteps.verify_response_code_errorMessage(Bookingsteps.java:119)
+	at ✽.Verify the response status code as 400 and error message &quot;size must be between 11 and 21&quot;(file:///C:/Users/HP/IdeaProjects/API_Testing_Kata/src/test/resources/features/createBooking.feature:49)
+</pre></div></td>
+<td>0</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,9 +103,99 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a room booking", "Create Room Booking for the particular dates"</td>
+<td></td>
+<td>0</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get list of rooms availabe for booking", "Get list of rooms available for booking"</td>
+<td></td>
+<td>2</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error validation while booking the room", "Create Room Booking for the particular dates"</td>
+<td></td>
+<td>1</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error validation while booking the room", "Create Room Booking for the particular dates"</td>
+<td></td>
+<td>0</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit the booking details", "Edit the booking details by logging  as admin"</td>
+<td></td>
+<td>2</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit the booking details", "Edit the booking details by logging  as admin"</td>
+<td></td>
+<td>1</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get available rooms for the given dates", "Get the room availability for the particular dates"</td>
+<td></td>
+<td>1</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete the booking as admin", "Delete the booking"</td>
+<td></td>
+<td>22</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error validation while booking the room", "Create Room Booking for the particular dates"</td>
+<td></td>
+<td>0</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get list of rooms by roomid", "Get list of rooms by roomid for booking"</td>
+<td></td>
+<td>32</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error validation while booking the room", "Create Room Booking for the particular dates"</td>
+<td></td>
+<td>0</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error validation while booking the room", "Create Room Booking for the particular dates"</td>
+<td></td>
+<td>0</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get list of rooms by roomid", "Get list of rooms by roomid for booking"</td>
+<td></td>
+<td>1</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error validation while booking the room", "Create Room Booking for the particular dates"</td>
+<td></td>
+<td>1</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get list of rooms by roomid", "Get list of rooms by roomid for booking"</td>
+<td></td>
+<td>1</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
 <td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testing end to end flow as a admin", "Testing end to end flow as admin"</td>
 <td></td>
-<td>13</td>
+<td>2</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get list of rooms by roomid", "Get list of rooms by roomid for booking"</td>
+<td></td>
+<td>0</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error validation while booking the room", "Create Room Booking for the particular dates"</td>
+<td></td>
+<td>0</td>
+<td>com.booking.TestRunner@22635ba0</td></tr>
+<tr>
+<td title='com.booking.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.booking.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error validation while booking the room", "Create Room Booking for the particular dates"</td>
+<td></td>
+<td>0</td>
 <td>com.booking.TestRunner@22635ba0</td></tr>
 </table><p>
 </body>

@@ -40,17 +40,20 @@ JsonSchemaValidator – For response schema validation
 Clone the repository:
 git clone https://github.com/Prema1823/API_Testing_Kata.git
 
-Install dependencies:
+**Install dependencies:**
 mvn clean install
 
-Executing the test scripts:
-1. Update the appropriate tags in TestRunner file. 
-    Eg. For Executing E2EAdmin.feature, pass @endtoendflowhotelbooking in TestRunner file under tags section
-2. mvn clean test
+**Executing the test scripts:**
+1. Update the appropriate tags in the TestRunner file.
 
-Reports:
+    a. Example: To execute E2EAdmin.feature, use the tag @endtoendflowhotelbooking in the tags section of the TestRunner file.
+    b. To execute all test cases, use the common tag @HotelBooking.
 
+2. Run the tests using the command:
+    mnv clean test
 
-Note: 
+**Reports**:
+Cucumber reports are available in target --> cucumber-report.html .Right Click on cucumber-report.html and open in browser.
 
+**Note**: 
 Provided swagger URL is not working, so I have used the given URL--> console values and hit postman for verifying request and response

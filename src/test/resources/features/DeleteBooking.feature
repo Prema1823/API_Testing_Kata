@@ -1,3 +1,4 @@
+@HotelBooking
 Feature: Delete the booking
 
   Background:
@@ -22,4 +23,4 @@ Feature: Delete the booking
 
     Examples:
       |endpointurl|fname|lname|checkin|checkout|email|phone|
-      |api/booking|Rath|Cath|2025-11-06|2025-11-07|rathcathr@tcs.com|07907945853|
+      |api/booking|Ratheesh|Jatheesh|2025-12-14|2025-12-15|rathgathesh1@tcs.com|07907945854|

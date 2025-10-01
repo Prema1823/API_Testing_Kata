@@ -1,5 +1,5 @@
 
-@UpdateBookingdetails
+@HotelBooking
 Feature: Edit the booking details by logging  as admin
 
   Background:
@@ -26,7 +26,7 @@ Feature: Edit the booking details by logging  as admin
 
     Examples:
       |endpointurl|fname|lname|checkin|checkout|email|phone|
-      |api/booking|BNPP|account|2025-10-10|2025-10-11|bnppaccount@mail.com|07907945853|
+      |api/booking|BNPPa|accounta|2025-11-10|2025-11-11|bnppaccount@mail.com|07907945853|
 
       @MissingmandatoryfieldsinEditBooking
       Scenario Outline: Edit the booking details
@@ -42,9 +42,9 @@ Feature: Edit the booking details by logging  as admin
         Given the user hits the endpoint "api/booking/"
         When admin edits the room details
           | fnameedit | lname | email              | phone         | checkin    | checkout   |
-          |     | Sagar1   	 | premsagar@gmail.com | 09876543212   | 2025-10-18 | 2025-10-19|
+          |     | Ruth   	 | premsagar@gmail.com | 09876543212   | 2025-10-18 | 2025-10-19|
         Then Verify the response status code as 400 and error message "<errorMessage>"
 
         Examples:
           |endpointurl|fname|lname|checkin|checkout|email|phone|errorMessage|
-          |api/booking|Prema|Sagary|2025-10-06|2025-10-07|presagar@tcs.com|07907945852|Firstname should not be blank|
+          |api/booking|Prabhu|Ruth|2025-11-16|2025-11-17|premsagar@tcs.com|07907945852|Firstname should not be blank|

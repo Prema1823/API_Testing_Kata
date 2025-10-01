@@ -53,6 +53,13 @@ public class Bookingsteps extends Utils {
                 .get(declareendpoint.getEndpoint());
     }
 
+    @When("the user sends a GET request to the room api")
+    public void user_sends_GET_request_roomapi (){
+        response = requestSetup()
+                .when()
+                .get(declareendpoint.getEndpoint());
+    }
+
     @When("user provides the details and books the room with")
     public void user_provide_details_bookstheroom(final DataTable dataInput) throws JsonProcessingException {
 
@@ -88,6 +95,12 @@ public class Bookingsteps extends Utils {
         .body(matchesJsonSchemaInClasspath(schemapath));
     }
 
+    @When("the user sends a GET request by passing roomid {string}")
+    public void user_sends_GET_request_passing_roomid(String roomid){
+        response = requestSetup()
+                .when()
+                .get(declareendpoint.getEndpoint() +roomid );
+    }
 
     @Then("Verify the response status code as {int}")
     public void verify_response_code ( int expectedStatusCode){

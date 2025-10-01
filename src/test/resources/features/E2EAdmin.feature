@@ -1,4 +1,4 @@
-@endtoendflowhotelbooking
+@HotelBooking
 Feature: Testing end to end flow as admin
 
   Background:
@@ -19,11 +19,11 @@ Feature: Testing end to end flow as admin
     Given the user hits the endpoint "api/booking/"
     When admin edits the room details
       | fname | lname | email              | phone         | checkin    | checkout   |
-      | Prem1    | Sagar1   	 | premsagar@gmail.com | 09876543212   | 2025-10-18 | 2025-10-19|
+      | BNPP    | Sagar1   	 | premsagar@gmail.com | 09876543212   | 2025-10-18 | 2025-10-19|
     Then Verify the response status code as 200
     When admin deletes the booking using booking id
     Then Verify the response status code as 200
 
     Examples:
       |endpointurl|fname|lname|checkin|checkout|email|phone|
-      |api/booking|Prema|Sagary|2025-10-06|2025-10-07|presagar@tcs.com|07907945852|
+      |api/booking|Rithaan|Sidhaan|2025-12-13|2025-12-14|ridheasidh@tcs.com|07907846852|

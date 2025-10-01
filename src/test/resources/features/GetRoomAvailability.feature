@@ -1,4 +1,4 @@
-
+@HotelBooking
 
 Feature:Get the room availability for the particular dates
   @getroomavailability

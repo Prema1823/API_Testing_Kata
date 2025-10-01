@@ -1,4 +1,5 @@
-Feature: Testing end to end flow as admin
+@HotelBooking
+Feature: Delete the booking
 
   Background:
     Given the user hits the endpoint "api/auth/login"
@@ -6,7 +7,7 @@ Feature: Testing end to end flow as admin
     Then Verify the response status code as 200
 
     @Deletebookinghappyflow
-  Scenario Outline: Testing end to end flow as a admin
+  Scenario Outline: Delete the booking as admin
     Given the user hits the endpoint "<endpointurl>"
     When user provides the details and books the room with
 
@@ -22,4 +23,4 @@ Feature: Testing end to end flow as admin
 
     Examples:
       |endpointurl|fname|lname|checkin|checkout|email|phone|
-      |api/booking|Rath|Cath|2025-11-06|2025-11-07|rathcathr@tcs.com|07907945853|
+      |api/booking|Rathesh|Jathesh|2025-11-14|2025-11-15|rathgathesh@tcs.com|07907945853|
